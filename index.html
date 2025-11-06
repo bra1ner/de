@@ -16,31 +16,22 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-19TX9J8WR3');
   </script>
 
   <title>DeSphinx</title>
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Google tag (gtag.js) -->
-
-  <!-- Preload background image --
-  <link rel="preload" as="image" href="images/years.avif">
-  <link rel="preload" as="image" href="images/years.webp">
-  <link rel="preload" as="image" href="images/years.png">
-
-  <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="min-h-screen flex items-center justify-center">
 
-  <div class="bg-white/20 backdrop-blur-md p-8 rounded-3xl shadow-xl w-full max-w-sm text-center space-y-6">
+<body class="min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('images/sphinx.png');">
+
+  <div class="bg-[#1E1E1E80] backdrop-blur-lg p-8 rounded-3xl shadow-2xl w-full max-w-sm text-center space-y-6 border border-[#ffffff22]">
     <img src="images/pfp.png" alt="Profile Picture" class="w-24 h-24 mx-auto rounded-full shadow-lg object-cover" />
 
     <div>
-      <h1 class="text-2xl font-bold tracking-wide" id="username">DeSphinx</h1>
-      <p id="tagline" style="color: #FFFFFF80;">Social Media</p>
+      <h1 class="text-2xl font-bold tracking-wide text-white drop-shadow-[0_0_5px_#eb6804]" id="username">DeSphinx</h1>
+      <p id="tagline" style="color: #FFFFFF99;">Social Media</p>
     </div>
 
     <div class="space-y-4" id="links">
@@ -84,15 +75,12 @@
       username: "DeSphinx",
       tagline: "Social Media",
       links: [
-        //{ name: "DeGods", url: "https://degods.com/u/brainer", color: "bg-[#000000] text-[#FFFFFF]", icon: "images/degods.png" },
-        { name: "YouTube", url: "https://www.youtube.com/@nadialexandriaa", color: "bg-[#eb6804] text-[#FFFFFF]", icon: "images/tube.png" },
-        { name: "Instagram", url: "https://www.instagram.com/nadialexandriaa", color: "bg-[#eb6804] text-[#FFFFFF]", icon: "images/insta.png" },
-        { name: "Snap", url: "https://www.snapchat.com/@lil.nadiah", color: "bg-[#eb6804] text-[#FFFFFF]", icon: "images/snap.png" },
-        { name: "TikTok", url: "https://www.tiktok.com/@llil.nadiaa", color: "bg-[#eb6804] text-[#FFFFFF]", icon: "images/tik.png" },
-        { name: "Discord", url: "https://discord.gg/EjxeHxek", color: "bg-[#eb6804] text-[#FFFFFF]", icon: "images/dog.webp" },
-        { name: "Amazon", url: "https://www.amazon.com/shop/nadialexandriaa", color: "bg-[#eb6804] text-[#FFFFFF]", icon: "images/amazon (1).png" },
-        //{ name: "Phone Call", url: "https://calendly.com/brainerily/30min", color: "bg-[#FAF9F6] text-[#000000]", icon: "images/phone.png" },
-        //{ name: "Contact Me!", url: "#", color: "bg-[#FAF9F6] text-[#000000]", icon: "images/contact1.png" }
+        { name: "YouTube", url: "https://www.youtube.com/@nadialexandriaa", icon: "images/tube.png" },
+        { name: "Instagram", url: "https://www.instagram.com/nadialexandriaa", icon: "images/insta.png" },
+        { name: "Snap", url: "https://www.snapchat.com/@lil.nadiah", icon: "images/snap.png" },
+        { name: "TikTok", url: "https://www.tiktok.com/@llil.nadiaa", icon: "images/tik.png" },
+        { name: "Discord", url: "https://discord.gg/EjxeHxek", icon: "images/dog.webp" },
+        { name: "Amazon", url: "https://www.amazon.com/shop/nadialexandriaa", icon: "images/amazon (1).png" }
       ]
     };
 
@@ -104,7 +92,8 @@
       const a = document.createElement("a");
       a.href = link.url;
       a.target = "_blank";
-      a.className = `relative flex items-center justify-center ${link.color} px-4 py-3 rounded-xl font-medium hover:opacity-90 transition`;
+      a.className = `relative flex items-center justify-center text-white font-medium px-4 py-3 rounded-xl transition transform hover:scale-105 shadow-md hover:shadow-orange-400/40`;
+      a.style.background = "linear-gradient(135deg, #FF7A00, #FF3C00)";
 
       a.innerHTML = `
         <img src="${link.icon}" alt="" class="absolute left-4 w-5 h-5" />
@@ -126,7 +115,7 @@
       document.getElementById("contactModal").classList.add("hidden");
     });
   </script>
-  
+
   <script>
     const img = new Image();
     img.src = "images/sphinx.png";
@@ -134,3 +123,4 @@
   </script>
 </body>
 </html>
+
