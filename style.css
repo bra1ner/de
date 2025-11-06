@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  background-color: #f3520c; /* fallback color while image loads */
+  background-color: #ef3100; /* fallback color while image loads */
 }
 
 /* Blur-up placeholder before main image loads */
