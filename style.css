@@ -21,3 +21,10 @@ body.loaded {
   background-image: url('images/sphinx.png');
   filter: blur(0);
 }
+
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
